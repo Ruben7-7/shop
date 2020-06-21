@@ -125,44 +125,76 @@
   </nav>
 
 
-<main class="bg-light"> <br>
-      <h1 class="display-5 text-center">Վճարում</h1>
-      <div class="text-center">
-        <img src="https://academyflorida.com/wp-content/uploads/2019/02/9705586573733009006-credit_card.png" class="rounded img-fluid" alt="Responsive image" style="width: 350px; height: 225px;">
-      </div>
+  <main class="bg-light"> <br>
+      <h1 class="display-5 text-center">Ստուգում</h1>
+      <p class="display-5 text-center">Խնդրում ենք լինել զգույշ</p>
         <div class="container-fluid">
           <form style="margin-left: 5%; margin-right: 5%;">
             <div class="form-row">
               <div class="col-md-6 mb-3">
-                <label for="validationDefault01">Քարտի համարը</label>
-                <input type="text" class="form-control" id="validationDefault01" value="XXXXXXXXXXXX" required="">
+                <label for="validationDefault01">Անուն Ազգանուն</label>
+                <input type="text" class="form-control" id="validationDefault01" value="Mark" required="">
               </div>
               <div class="col-md-6 mb-3">
-                <label for="validationDefault02">Քարտի անունը</label>
-                <input type="text" class="form-control" id="validationDefault02" value="Full Name" required="">
+                <label for="validationDefault02">Է-հասցե</label>
+                <input type="text" class="form-control" id="validationDefault02" value="Example@SomeMail.com" required="">
               </div>
             </div>
             <div class="form-row">
               <div class="col-md-6 mb-3">
-                <label for="validationDefault01">Առաքման օրը</label>
-                <input type="text" class="form-control" id="validationDefault01" value="MM/YY" required="">
+                <label for="validationDefault01">Հեռախոս: </label>
+                <input type="text" class="form-control" id="validationDefault01" value="+xxxxxxxxxx" required="">
               </div>
               <div class="col-md-6 mb-3">
-                <label for="validationDefault02">Անվտանգության կոդը</label>
-                <input type="text" class="form-control" id="validationDefault02" value="XXXX" required="">
+                <label for="validationDefault02">Հասցե</label>
+                <input type="text" class="form-control" id="validationDefault02" value="exp.123 2143" required="">
               </div>
             </div>
-            
-            <div class="btn-group text-center" role="group" aria-label="Basic example">
-                <a href="check.html" type="submit" style="font-size: 15px;" class="btn btn-danger">Հետ</a>
-                <a href="verify.html" type="submit" style="font-size: 15px;" class="btn btn-primary">Առաջ</a>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="validationDefault03">Քաղաք</label>
+                <input type="text" class="form-control" id="validationDefault03" required="" value="Florida">
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="validationDefault04">Երկիր</label>
+                <select class="custom-select" id="validationDefault04">
+                  <option selected="" disabled="" value="">USA</option>
+                  <option>Armenia</option>
+                  <option>Russia</option>
+                </select>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="validationDefault04">Մարզ</label>
+                <select class="custom-select" id="validationDefault04">
+                  <option selected="" disabled="" value="">Արմավիր</option>
+                  <option>Արագածոտն</option>
+                  <option>Արարատ</option>
+                  <option>Կոտայք</option>
+                  <option>Շիրակ</option>
+                  <option>Լոռի</option>
+                  <option>Տավուշ</option>
+                  <option>Գեղարքունիք</option>
+                  <option>Վայոց Ձոր</option>
+                  <option>Սյունիք</option>
+                </select>
+              </div>
             </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2">
+                <label class="form-check-label" for="invalidCheck2">
+                  Համաձայն եմ հետևյալ պայմաններին
+                </label>
+              </div>
+            </div>
+            <a href="index.html" class="btn btn-outline-danger" style="font-size: 15px;" type="submit">Հետ</a>
+            <a href="payment.html" class="btn btn-outline-primary" style="font-size: 15px;" type="submit">Առաջ</a>
           </form>
         </div>
     </main>
 
 
-   <footer>
+ <footer>
             <div class="">
           <!-- Row 1 for footer -->
           <div class="d-flex justify-content-center flex-lg-row  flex-column bd-highligh">
@@ -250,9 +282,7 @@
       </div>
       </footer>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
-</button>
+
 
 <!-- Modal -->
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
